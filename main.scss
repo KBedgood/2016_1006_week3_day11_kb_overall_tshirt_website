@@ -1,0 +1,73 @@
+@import "mixins";
+// fonts weights available: Ubuntu:400,400i,700
+body {
+            font-family: 'Ubuntu', sans-serif;
+            line-height: 1.4em;
+}
+
+img {
+  width:100%;
+}
+
+.gallery img {
+  display:block;
+  margin:0px auto;
+}
+
+body .conatainer {
+            max-width: 990px;
+            margin: 0px auto;
+}
+
+.fixedNavMenu {
+            background-color: black;
+            height: 81px;
+            z-index: -444;
+}
+
+.nav {
+            display: inline-block;
+            font-size: 14px;
+            padding-right: 44px;
+            color: white;
+            text-align: right;
+            float: right;
+}
+
+.logo {
+display: inline-block;
+max-height: 70px;
+padding: 20px;
+margin-left: 1%;
+}
+
+.gallery1 {
+  width: 33%;
+  display: inline-block;
+  padding: 20px; }
+
+#donnieTee {
+  position: relative; 
+  padding: 20px; 
+  }
+
+  .shop {
+  height: 30px;
+  background-color: grey }
+
+  h3 {
+  font-size: 16px;
+  color: black;
+  margin-top: 10px;
+  float: left; }
+
+  .price {
+  font-size: 18px;
+  color: black;
+  display: inline;
+  float: right;
+  font-weight: bold; }
+
+.footer {
+            @include footer();
+}

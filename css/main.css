@@ -21,12 +21,24 @@ body .conatainer {
   height: 81px;
   width: 100%; }
 
+ul {
+  float: right; }
+
+ul a {
+  color: white;
+  padding-bottom: 11px; }
+
+ul a:hover {
+  color: #E43D96;
+  text-decoration: none;
+  border-bottom: 8px solid #E43D96; }
+
 .nav {
   font-size: 14px;
   font-weight: 400;
   padding-right: 46px;
   color: white;
-  float: right;
+  display: inline-block;
   margin-top: 44px; }
 
 #home {
@@ -62,20 +74,39 @@ h3 {
   float: right;
   font-weight: bold; }
 
+#contact h3 {
+  font-family: helvetica, serif;
+  font-size: 12px;
+  color: white;
+  text-align: center;
+  background: black;
+  height: 32px;
+  padding-top: 10px; }
+
 .footer {
   font-family: helvetica, serif;
   font-size: 12px;
-  margin-top: 64px;
-  color: grey;
-  text-align: center; }
+  color: white;
+  text-align: center;
+  background: black;
+  height: 32px;
+  padding-top: 10px; }
 
-@media (max-width: 990px) {
+@media (max-width: 768px) {
   .logo {
-    max-height: 44px;
-    float: left; }
+    max-height: 40px;
+    margin-top: 15px; }
+  .fixedNavMenu {
+    height: auto; }
   .nav {
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 400;
-    margin-top: 23px;
-    margin-bottom: 24px;
-    margin-right: -28px; } }
+    margin-top: 8px;
+    margin-bottom: 12px;
+    padding-right: 12px; }
+  ul {
+    display: block;
+    margin: 0px auto;
+    float: none; }
+  ul a {
+    padding-bottom: 8px; } }

@@ -20,25 +20,28 @@ body .conatainer {
 }
 
 .fixedNavMenu {
+            position: fixed;
             background-color: black;
-            height: 81px;
-            z-index: -444;
-}
+                        height: 81px;
+            width: 100%;
+          }
 
 .nav {
-            display: inline-block;
-            font-size: 14px;
-            padding-right: 44px;
-            color: white;
-            text-align: right;
-            float: right;
+font-size: 14px;
+font-weight: 400;
+padding-right: 46px;
+color: white;
+float: right;
+margin-top: 44px;
+}
+
+#home {
+margin-right: 30px;
 }
 
 .logo {
-display: inline-block;
-max-height: 70px;
-padding: 20px;
-margin-left: 1%;
+max-height: 40px;
+margin-top: 20px;
 }
 
 .gallery1 {
@@ -71,3 +74,20 @@ margin-left: 1%;
 .footer {
             @include footer();
 }
+
+@media (max-width: 990px) {
+
+.logo {
+max-height: 44px;
+float: left;
+}
+
+.nav {
+font-size: 12px;
+font-weight: 400;
+margin-top: 23px;
+margin-bottom: 24px;
+margin-right: -28px;
+}
+
+  }

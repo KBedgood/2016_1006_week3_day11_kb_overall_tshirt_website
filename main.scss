@@ -5,132 +5,110 @@ body {
             line-height: 1.4em;
 }
 
-img {
-            width: 100%;
-}
-
-.gallery img {
-            display: block;
-            margin: 0px auto;
-}
-
-body .conatainer {
-            max-width: 990px;
-            margin: 0px auto;
-}
-
-.fixedNavMenu {
+nav {
             position: fixed;
-            background-color: black;
-            height: 81px;
             width: 100%;
+            background-color: black;
+            z-index: 1;
+            .logo {
+                        margin-top: 22px;
+                        max-height: 46px;
+                        margin-bottom: 17px;
+                        float: left;
+            }
 }
 
-ul {
-            float: right;
+.mainNav {
+            ul {
+                        float: right;
+                        li {
+                                    display: inline-block;
+                                    padding-top: 38px;
+                                    letter-spacing: 1px;
+                                    a {
+                                                color: white;
+                                                font-size: 12px;
+                                                font-weight: 700;
+                                                text-decoration: none;
+                                                padding: 23px 15px;
+                                                letter-spacing: .7px;
+                                                &:hover {
+                                                            color: #E43D96;
+                                                            border-bottom: 12px solid #E43D96;
+                                                            padding-bottom: 19px;
+                                                }
+                                    }
+                        }
+            }
 }
 
-ul a {
-            color: white;
-            padding-bottom: 11px;
-}
-
-ul a:hover {
-            color: #E43D96;
-            text-decoration: none;
-            border-bottom: 8px solid #E43D96;
-}
-
-.nav {
-            font-size: 14px;
-            font-weight: 400;
-            padding-right: 46px;
-            color: white;
-            display: inline-block;
-            margin-top: 44px;
-}
-
-#home {
-            margin-right: 30px;
-}
-
-.logo {
-            max-height: 40px;
-            margin-top: 20px;
-}
-
-.gallery1 {
-            width: 33%;
-            display: inline-block;
-            padding: 20px;
-}
-
-#donnieTee {
-            position: relative;
-            padding: 20px;
-}
-
-.shop {
-            height: 30px;
-            background-color: grey
-}
-
-h3 {
-            font-size: 16px;
-            color: black;
-            margin-top: 10px;
-            float: left;
-}
-
-.price {
-            font-size: 18px;
-            color: black;
-            display: inline;
-            float: right;
-            font-weight: bold;
-}
-
-#contact h3 {
-            font-family: helvetica, serif;
-            font-size: 12px;
-            color: white;
-            text-align: center;
-            background: black;
-            height: 32px;
-            padding-top: 10px;
+.homePhoto {
+            img {
+                        width: 100%;
+            }
 }
 
 .footer {
-            font-family: helvetica, serif;
-            font-size: 12px;
-            color: white;
-            text-align: center;
-            background: black;
-            height: 32px;
-            padding-top: 10px;
+            display: block;
+            height: 200px;
+            width: 100%;
+            background-color: #E43D96;
+            z-index: 999;
+            .follow {
+                        text-align: center;
+            }
+            .kristie {
+                        text-align: center;
+                        color: white;
+                        font-size: 12px;
+                        margin-top: 169px;
+            }
 }
 
-@media (max-width: 768px) {
-            .logo {
-                        max-height: 40px;
-                        margin-top: 15px;
+// ABOUT
+.container.about {
+            width: 990px;
+}
+
+.jot-connect {
+            margin-top: 83px;
+            margin-bottom: 59px;
+            text-align: center;
+}
+
+.twitterFollow {
+            margin-top: 132px;
+            margin-left: 10px;
+}
+
+.twitter-timeline {
+            max-height: 900px;
+            margin-bottom: 40px;
+}
+
+.image-ty {
+            .photo-ty {
+                        img {
+                                    margin-top: -378px;
+                                    z-index: 2;
+                                    margin-left: 71px;
+                        }
             }
-            .fixedNavMenu {
-                        height: auto;
+}
+
+// ABOUT
+.left-connect {
+            margin-top: 120px;
+            margin-bottom: 59px;
+            text-align: center;
+            h3 {
+                        font-size: 24px;
             }
-            .nav {
-                        font-size: 11px;
-                        font-weight: 400;
-                        margin-top: 8px;
-                        margin-bottom: 12px;
-                        padding-right: 12px;
+            p {
+                        font-size: 12px;
             }
-            ul {
-                        display: block;
-                        margin: 0px auto;
-                        float: none;
-            }
-            ul a {
-                        padding-bottom: 8px;
+            h5 {
+                        font-size: 16px;
+                        color: #E43D96;
             }
 }
